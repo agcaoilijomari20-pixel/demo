@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+   font-family: "Poppins", Arial, sans-serif;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../finalproject/images/1764745338865.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #4a4a4a;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    padding: 15px 50px;
+    color: #fff;
+    position: sticky;
+    top: 0;
+}
+
+header .logo h1 {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 26px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: #1f1f1f;
+    align-items: center;
+}
+
+nav .logo {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.logo img{
+    width: 50px;
+    height: auto;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background: #ffcc66;
+    color: black;
+    border-radius: 4px;
+}
+
+
+
+.contact-list {
+    text-align: center;
+    padding: 80px 20px;
+    color: #fff;
+}
+
+.contact-list h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.contact-list p {
+    font-size: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+}
+
+.contact-box {
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.contact-box h3 {
+    color: #f39c12;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.contact-box p {
+    font-size: 18px;
+    color: #555;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: #fff;
+    margin-top: 100px;
+}
+
+
+@media (max-width: 400px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    .logo img {
+        width: 40px;
+    }
+
+    header .logo h1 {
+        font-size: 20px;
+        margin-top: 5px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 8px 0;
+    }
+
+    .contact-list h2 {
+        font-size: 30px;
+    }
+
+    .contact-list p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        padding: 20px 10px;
+        gap: 20px;
+    }
+
+    .contact-box {
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+        padding: 20px 15px;
+    }
+
+    .contact-box h3 {
+        font-size: 20px;
+    }
+
+    .contact-box p {
+        font-size: 14px;
+    }
+}
+
+
+
+@media (min-width: 401px) and (max-width: 1000px) {
+
+    header {
+        padding: 15px 30px;
+    }
+
+    .logo img {
+        width: 45px;
+    }
+
+    header .logo h1 {
+        font-size: 22px;
+    }
+
+    nav ul li a {
+        padding: 6px 10px;
+    }
+
+    .contact-list h2 {
+        font-size: 38px;
+    }
+
+    .contact-list p {
+        font-size: 18px;
+        max-width: 90%;
+    }
+
+    .contact-info {
+        gap: 20px;
+        padding: 40px 20px;
+    }
+
+    .contact-box {
+        width: 45%;
+        max-width: 300px;
+    }
+
+    .contact-box h3 {
+        font-size: 22px;
+    }
+
+    .contact-box p {
+        font-size: 16px;
+    }
+}
+
